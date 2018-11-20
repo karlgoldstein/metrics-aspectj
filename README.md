@@ -197,7 +197,7 @@ In addition to that, _Metrics AspectJ_ optional support of EL 3.0 expression for
 In order to activate _Metrics AspectJ_ for a particular class, it must be annotated with the `@Metrics` annotation:
 
 ```java
-import com.codahale.metrics.annotation.Timed;
+import io.kgoldstein.metrics.annotation.Timed;
 
 import io.astefanutti.metrics.aspectj.Metrics;
 
@@ -222,7 +222,7 @@ _Metrics_ comes with the [`metrics-annotation`][] module that contains a set of 
 For example, a method can be annotated with the `@Timed` annotation so that its execution can be monitored using _Metrics_:
 
 ```java
-import com.codahale.metrics.annotation.Timed;
+import io.kgoldstein.metrics.annotation.Timed;
 
 import io.astefanutti.metrics.aspectj.Metrics;
 
@@ -239,7 +239,7 @@ In that example, _Metrics AspectJ_ will instrument all the constructors of the `
 A `static` method can also be annotated with the `@Timed` annotation so that its execution can be monitored using _Metrics_:
 
 ```java
-import com.codahale.metrics.annotation.Timed;
+import io.kgoldstein.metrics.annotation.Timed;
 
 import io.astefanutti.metrics.aspectj.Metrics;
 
@@ -256,7 +256,7 @@ In that example, _Metrics AspectJ_ will instrument the `TimedMethod` class so th
 Optionally, the `Metric` name can be resolved with an EL expression that evaluates to a `String`:
 
 ```java
-import com.codahale.metrics.annotation.Timed;
+import io.kgoldstein.metrics.annotation.Timed;
 
 import io.astefanutti.metrics.aspectj.Metrics;
 
@@ -285,7 +285,7 @@ The `Metrics.registry` annotation attribute provides the way to declare the `Met
 The `MetricRegistry` can thus be resolved by name relying on the [`SharedMetricRegistries.getOrCreate(String name)`][] method:
 
 ```java
-import com.codahale.metrics.annotation.Metered;
+import io.kgoldstein.metrics.annotation.Metered;
 
 import io.astefanutti.metrics.aspectj.Metrics;
 
@@ -301,7 +301,7 @@ Or with an EL expression that evaluates to a bean property of type `MetricRegist
 
 ```java
 import com.codahale.metrics.MetricRegistry;
-import com.codahale.metrics.annotation.Metered;
+import io.kgoldstein.metrics.annotation.Metered;
 
 import io.astefanutti.metrics.aspectj.Metrics;
 

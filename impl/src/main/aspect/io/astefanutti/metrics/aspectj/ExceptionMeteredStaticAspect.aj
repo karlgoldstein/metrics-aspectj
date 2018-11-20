@@ -16,7 +16,7 @@
 package io.astefanutti.metrics.aspectj;
 
 import com.codahale.metrics.Meter;
-import com.codahale.metrics.annotation.ExceptionMetered;
+import io.kgoldstein.metrics.annotation.ExceptionMetered;
 import org.aspectj.lang.reflect.MethodSignature;
 
 final aspect ExceptionMeteredStaticAspect {

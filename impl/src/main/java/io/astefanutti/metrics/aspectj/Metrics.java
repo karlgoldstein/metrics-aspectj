@@ -63,7 +63,7 @@ public @interface Metrics {
      * Its value can either be:
      * <ul>
      *     <li>a string literal that identifies a {@code MetricRegistry} accessible
-     *     from the {@code SharedMetricRegistries} class,</li>
+     *     from the {@code SharedMeterRegistries} class,</li>
      *     <li>or a valid EL expression that evaluates
      *     to the registry name or the {@code MetricRegistry} instance.</li>
      * </ul>

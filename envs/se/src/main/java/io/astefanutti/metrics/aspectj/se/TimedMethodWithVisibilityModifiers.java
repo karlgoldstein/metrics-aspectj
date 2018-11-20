@@ -15,7 +15,7 @@
  */
 package io.astefanutti.metrics.aspectj.se;
 
-import com.codahale.metrics.annotation.Timed;
+import io.kgoldstein.metrics.annotation.Timed;
 import io.astefanutti.metrics.aspectj.Metrics;
 
 @Metrics(registry = "visibilityTimerRegistry")

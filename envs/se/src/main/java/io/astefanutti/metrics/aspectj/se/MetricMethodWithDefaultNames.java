@@ -15,9 +15,9 @@
  */
 package io.astefanutti.metrics.aspectj.se;
 
-import com.codahale.metrics.annotation.ExceptionMetered;
-import com.codahale.metrics.annotation.Metered;
-import com.codahale.metrics.annotation.Timed;
+import io.kgoldstein.metrics.annotation.ExceptionMetered;
+import io.kgoldstein.metrics.annotation.Metered;
+import io.kgoldstein.metrics.annotation.Timed;
 import io.astefanutti.metrics.aspectj.Metrics;
 
 @Metrics(registry = "defaultNameRegistry")

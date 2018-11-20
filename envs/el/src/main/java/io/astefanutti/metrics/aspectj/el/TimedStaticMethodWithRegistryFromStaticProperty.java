@@ -16,7 +16,7 @@
 package io.astefanutti.metrics.aspectj.el;
 
 import com.codahale.metrics.MetricRegistry;
-import com.codahale.metrics.annotation.Timed;
+import io.kgoldstein.metrics.annotation.Timed;
 import io.astefanutti.metrics.aspectj.Metrics;
 
 @Metrics(registry = "${TimedStaticMethodWithRegistryFromStaticProperty.REGISTRY}")

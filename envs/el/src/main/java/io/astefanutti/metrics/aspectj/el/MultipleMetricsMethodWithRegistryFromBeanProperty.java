@@ -16,10 +16,10 @@
 package io.astefanutti.metrics.aspectj.el;
 
 import com.codahale.metrics.MetricRegistry;
-import com.codahale.metrics.annotation.ExceptionMetered;
-import com.codahale.metrics.annotation.Gauge;
-import com.codahale.metrics.annotation.Metered;
-import com.codahale.metrics.annotation.Timed;
+import io.kgoldstein.metrics.annotation.ExceptionMetered;
+import io.kgoldstein.metrics.annotation.Gauge;
+import io.kgoldstein.metrics.annotation.Metered;
+import io.kgoldstein.metrics.annotation.Timed;
 import io.astefanutti.metrics.aspectj.Metrics;
 
 @Metrics(registry = "${this.registry}")

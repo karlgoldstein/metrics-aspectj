@@ -49,7 +49,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <metrics.version>3.2.2</metrics.version>
         <aspectj.version>1.8.10</aspectj.version>
+        <micrometer.version>1.1.0</micrometer.version>
     </properties>
+
+
 
     <modules>
         <module>impl</module>
@@ -205,6 +208,12 @@
                         <artifactId>slf4j-api</artifactId>
                     </exclusion>
                 </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>io.micrometer</groupId>
+                <artifactId>micrometer-core</artifactId>
+                <version>${micrometer.version}</version>
             </dependency>
 
             <dependency>

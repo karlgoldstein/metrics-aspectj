@@ -15,11 +15,11 @@
  */
 package io.astefanutti.metrics.aspectj;
 
-import com.codahale.metrics.Metric;
+import io.micrometer.core.instrument.Meter;
 
 import java.lang.annotation.Annotation;
 
-public interface AnnotatedMetric<T extends Metric> {
+public interface AnnotatedMetric<T extends Meter> {
 
     boolean isPresent();
 
@@ -27,7 +27,7 @@ public interface AnnotatedMetric<T extends Metric> {
 
     <A extends Annotation> A getAnnotation(Class<A> clazz);
 
-    final class IsPresent<T extends Metric> implements AnnotatedMetric<T> {
+    final class IsPresent<T extends Meter> implements AnnotatedMetric<T> {
 
         private final T metric;
 
@@ -55,7 +55,7 @@ public interface AnnotatedMetric<T extends Metric> {
         }
     }
 
-    final class IsNotPresent<T extends Metric> implements AnnotatedMetric<T> {
+    final class IsNotPresent<T extends Meter> implements AnnotatedMetric<T> {
 
         @Override
         public boolean isPresent() {

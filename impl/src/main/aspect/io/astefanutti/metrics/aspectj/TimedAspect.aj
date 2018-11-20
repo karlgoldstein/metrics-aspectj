@@ -16,7 +16,7 @@
 package io.astefanutti.metrics.aspectj;
 
 import com.codahale.metrics.Timer;
-import com.codahale.metrics.annotation.Timed;
+import io.kgoldstein.metrics.annotation.Timed;
 import org.aspectj.lang.reflect.MethodSignature;
 
 final aspect TimedAspect {

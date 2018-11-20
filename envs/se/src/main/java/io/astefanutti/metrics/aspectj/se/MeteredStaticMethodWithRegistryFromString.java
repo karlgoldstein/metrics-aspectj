@@ -15,7 +15,7 @@
  */
 package io.astefanutti.metrics.aspectj.se;
 
-import com.codahale.metrics.annotation.Metered;
+import io.kgoldstein.metrics.annotation.Metered;
 import io.astefanutti.metrics.aspectj.Metrics;
 
 @Metrics(registry = "singleMeterStaticRegistry")
